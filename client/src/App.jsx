@@ -8,12 +8,12 @@ function App() {
 	return (
 		<div className="app-main-container">
 			<Header/>
-			<Routes>
-				<Home />
-				<Dashboard />
-				<Admin />
+			{/* <Routes> */}
+				{/* <Home /> */}
+				{/* <Dashboard /> */}
+				{/* <Admin /> */}
 				<RentalApp />
-			</Routes>
+			{/* </Routes> */}
 		</div>
 	);
 }
