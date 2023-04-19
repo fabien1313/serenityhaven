@@ -6,6 +6,23 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+:root {
+    --color1: #9500ec;
+    --color2: #7407a0;
+    --color3: #ffa600;
+    --color4: green;
+    --color5: blue;
+    --color6: rgb(29, 29, 29);
+    --h1: 3rem;
+    --h2: 2.25rem;
+    --h3: 1.75rem;
+    --h4: 1.5rem;
+    --p: 1.0rem;
+    --window: rgba(0, 0, 0, 0.5);
+    --border1: 3px solid black;
+    --border2: 1px solid black;
+    --shadow: 5px 5px 10px #000000d3;
+}
 body {
 	background-image: url(./images/background.jpg);
 	background-size: cover;
