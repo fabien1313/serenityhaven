@@ -7,7 +7,7 @@ import RentalApp from "./components/RentalApp/RentalApp";
 function App() {
 	return (
 		<div className="app-main-container">
-			<Header/>
+			{/* <Header/> */}
 			{/* <Routes> */}
 				{/* <Home /> */}
 				{/* <Dashboard /> */}

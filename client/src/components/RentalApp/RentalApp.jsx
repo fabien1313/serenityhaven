@@ -31,8 +31,12 @@ const RentalApp = () => {
 				</div>
 				<div className="ra-applicant-info">
 					<h2 className="ra-applicant-title">Applicant Information</h2>
-
-
+					<div className="ra-applicant-name-container">
+						<h2 className="ra-applicant-name">Applicant Name:</h2>
+						<input className="ra-applicant-first-name" type="text" placeholder="First Name"/>
+						<input className="ra-applicant-middle-name" type="text" placeholder="Middle Name"/>
+						<input className="ra-applicant-last-name" type="text" placeholder="Last Name"/>
+					</div>
 				</div>
 			</form>
 		</div>

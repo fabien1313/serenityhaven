@@ -6,10 +6,11 @@
 	align-items: center;
 	/* justify-content: center; */
 	flex-direction: column;
+	color: white;
 }
 .ra-main-form {
 	margin: 50px 0 0 0;
-	background-color: grey;
+	background-color: rgba(71, 71, 71, 0.726);
 	width: 90%;
 }
 .ra-main-title, .ra-dropdown {
@@ -21,7 +22,31 @@
 	font-size: 14px;
 	border-radius: 5px;
 	border: 1px solid gray;
-	z-index: 1000;
-	
-  }
+}
+.ra-applicant-title {
+	text-align: center;
+}
+.ra-applicant-name-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ra-applicant-name {
+	font-size: 14px;
+	margin: 10px 10px;
+}
+.ra-applicant-first-name, .ra-applicant-middle-name, .ra-applicant-last-name {
+	width: 200px;
+	padding: 5px;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	margin: 10px 10px;
+	text-align: center;
+}
+
+
+
+
+
 /* ------------- */
