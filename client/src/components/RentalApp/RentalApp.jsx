@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./rentalApp.css";
 import stateOptions from "./stateOptions.js";
 
 const RentalApp = () => {
@@ -30,7 +31,7 @@ const RentalApp = () => {
 				</div>
 				<div className="ra-applicant-info">
 					<h2 className="ra-applicant-title">Applicant Information</h2>
-					
+
 
 				</div>
 			</form>
