@@ -1,39 +1,60 @@
 /* Global*/
-*::before, *::after, * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*::before,
+*::after,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-  background-color: rgb(74, 74, 74);
-  overflow: hidden;
-  position: relative;
+	background-image: url(./images/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+.app-main-container {
+
+}
+.app-main-container::after {
+
 }
 /* ------------ */
 
-
 /* App */
-.app {
-  opacity: 0.5;
-  width: 100vw;
-  height: 100vh;
-}
-.app img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+.app-main-container {
+	
 }
 /* ------------ */
 
 /* Home css */
 
-
-
 /* ------------- */
 
-
-
+/*? RentalApp */
+.ra-main-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	flex-direction: column;
+}
+.ra-main-form {
+	margin: 50px 0 0 0;
+	background-color: grey;
+	width: 90%;
+}
+.ra-main-title, .ra-dropdown {
+	text-align: center;
+	margin: 10px 0;
+}
+.ra-referral-dropdown {
+	padding: 5px;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	z-index: 1000;
+	
+  }
+/* ------------- */
