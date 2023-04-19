@@ -12,7 +12,7 @@ function App() {
 				{/* <Home /> */}
 				{/* <Dashboard /> */}
 				{/* <Admin /> */}
-				<RentalApp />
+				{/* <RentalApp /> */}
 			{/* </Routes> */}
 		</div>
 	);

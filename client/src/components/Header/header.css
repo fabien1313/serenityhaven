@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Orbitron&family=Raleway:wght@300;500&display=swap');
+
+
+:root {
+    --main: black;
+    --secondary: beige;
+    --testcolor: rgb(43, 169, 211);
+    --logofontsize: 35px;
+    --font: 'Aboreto', cursive;
+    --glowaffect: #2e45f7;
+}
+
+
+#header-main-container {
+    display: flex;
+    background-color: var(--testcolor);
+}
+
+#header-logo-title {
+    color: var(--secondary);
+    font-size: var(--logofontsize);
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: var(--font);
+    /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #F7D12E, 0 0 70px #F7D12E, 0 0 80px #F7D12E, 0 0 100px #F7D12E, 0 0 150px #F7D12E; */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--glowaffect), 0 0 70px var(--glowaffect), 0 0 60px var(--glowaffect), 0 0 90px var(--glowaffect), 0 0 120px var(--glowaffect);
+    animation: pulsate 4.5s ease-out infinite;
+
+}
+
+#header-logo-img {
+    width:60px;
+    height: 60px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+@keyframes pulsate {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 30px var(--glowaffect), 0 0 60px var(--glowaffect), 0 0 70px var(--glowaffect), 0 0 900px var(--glowaffect), 0 0 120px var(--glowaffect);
+    }
+    50% {
+        text-shadow: none;
+    }
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 30px var(--glowaffect), 0 0 60px var(--glowaffect), 0 0 70px var(--glowaffect), 0 0 90px var(--glowaffect), 0 0 120px var(--glowaffect);
+    }
+}
