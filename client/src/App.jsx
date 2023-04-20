@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Dashboard from "./components/Dashboard/Dashboard";
@@ -12,7 +13,7 @@ function App() {
 				{/* <Home /> */}
 				{/* <Dashboard /> */}
 				{/* <Admin /> */}
-				<RentalApp />
+				{/* <RentalApp /> */}
 			{/* </Routes> */}
 		</div>
 	);

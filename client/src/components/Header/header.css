@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Orbitron&family=Raleway:wght@300;500&display=swap');
+
+
+:root {
+    --main: white;
+    --secondary: beige;
+    --testcolor: rgb(43, 169, 211);
+    --logofontsize: 34px;
+    --font: 'Aboreto', cursive;
+    --glowaffect: #2e45f7;
+}
+#header-container-all-elems-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#header-container-logo-img {
+    margin-top: 10px;
+    display: flex;
+    /* background-color: rgb(50, 50, 50); */
+    width: 20%;
+    border-radius: 50%;
+    border-radius: 12px;
+}
+#header-logo-title {
+    color: var(--secondary);
+    font-size: var(--logofontsize);
+    margin-top: 18px;
+    margin-left: 22px;
+    font-family: var(--font);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--glowaffect), 0 0 70px var(--glowaffect), 0 0 60px var(--glowaffect), 0 0 90px var(--glowaffect), 0 0 120px var(--glowaffect);
+    animation: pulsate 4.5s ease-out infinite;
+
+}
+#header-logo-img {
+    width:60px;
+    height: 60px;
+    margin-left: 5px;
+    margin-top: 9px;
+}
+.header-nav-item1, .header-nav-item2, .header-nav-item3, .header-nav-item4, .header-nav-item5 {
+    display: inline-block;
+    padding: 18px 10px;
+    font-family: var(--font);
+    color: var(--main);
+}
+
+
+
+
+@keyframes pulsate {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 30px var(--glowaffect), 0 0 60px var(--glowaffect), 0 0 70px var(--glowaffect), 0 0 90px var(--glowaffect), 0 0 120px var(--glowaffect);
+    }
+    50% {
+        text-shadow: none;
+    }
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 30px var(--glowaffect), 0 0 60px var(--glowaffect), 0 0 70px var(--glowaffect), 0 0 90px var(--glowaffect), 0 0 120px var(--glowaffect);
+    }
+}
