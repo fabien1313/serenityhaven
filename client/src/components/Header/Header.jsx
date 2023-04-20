@@ -1,38 +1,50 @@
-import React, {useState} from 'react'
-import './header.css'
-import logo from '../../images/icons/apartments3_256.png'
+import React from 'react'
+import apartment from '../../images/icons/resizing-logo.png'
+import styled from 'styled-components'
+import Nav from './Nav'
 
+const Logo = styled.div`
+  display: flex;
+  font-size: 34px;
+  justify-content: space-between;
+  }
+  img {
+    position:relative;
+    width: 60px;
+    height: 60px;
+  }
+  .title {
+  color: white;
+  margin-left: 20px;
+  font-family: 'Aboreto', cursive;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #2e45f7, 0 0 70px #2e45f7, 0 0 60px #2e45f7, 0 0 90px #2e45f7, 0 0 120px #2e45f7;
+    animation: pulsate 4.5s ease-out infinite;
+    @keyframes pulsate {
+      0% {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 30px #2e45f7, 0 0 60px #2e45f7, 0 0 70px #2e45f7, 0 0 90px #2e45f7, 0 0 120px #2e45f7;
+      }
+      50% {
+          text-shadow: none;
+      }
+      100% {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 30px #2e45f7, 0 0 60px #2e45f7, 0 0 70px #2e45f7, 0 0 90px #2e45f7, 0 0 120px #2e45f7;
+      }
+  }
+  .apartment-img {
+    position: relative;
+    top: 16px;
+  }
+`
 
 const Header = () => {
-
-  
-
-
-
   return (
-    <header id="header-main-container">
-
-  <div id="header-container-all-elems-div">
-      <div id="header-container-logo-img">
-        <div id="header-logo-title">
-          Serenity Haven
-        </div>
-        <div id="header-img-div">
-          <img id="header-logo-img" src={logo} alt="logo" />
-        </div>
+    <Logo>
+      <div className='title'>Serenity Haven
+      <img className='apartment-img' src={apartment} alt="apartment"/>
       </div>
-
-      <div id="header-nav-div">
-        <h3 className='header-nav-item1'>nav1</h3>
-        <h3 className='header-nav-item2'>nav2</h3>
-        <h3 className='header-nav-item3'>nav3</h3>
-        <h3 className='header-nav-item4'>nav4</h3>
-      </div>
-  </div>
-
-
-
-    </header>
+      <Nav />
+    </Logo>
+     
   )
 }
 

@@ -9,13 +9,11 @@
     --font: 'Aboreto', cursive;
     --glowaffect: #2e45f7;
 }
-
 #header-container-all-elems-div {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-
 #header-container-logo-img {
     margin-top: 10px;
     display: flex;
@@ -23,10 +21,7 @@
     width: 20%;
     border-radius: 50%;
     border-radius: 12px;
-   
-
 }
-
 #header-logo-title {
     color: var(--secondary);
     font-size: var(--logofontsize);
@@ -37,44 +32,17 @@
     animation: pulsate 4.5s ease-out infinite;
 
 }
-
 #header-logo-img {
     width:60px;
     height: 60px;
     margin-left: 5px;
     margin-top: 9px;
 }
-
-
-.header-nav-item1, .header-nav-item2, .header-nav-item3, .header-nav-item4 {
+.header-nav-item1, .header-nav-item2, .header-nav-item3, .header-nav-item4, .header-nav-item5 {
     display: inline-block;
-    margin-right: 20px;
+    padding: 18px 10px;
     font-family: var(--font);
     color: var(--main);
-
-
-}
-
-#header-burger-menu {
-    height: 100%;
-    width: 4em;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-.burger-bar {
-    width: 4em;
-    height: 0.5em;
-    background-color: blue;
-    border-radius: 0.5em;
-}
-
-.menu {
-    
 }
 
 
