@@ -10,43 +10,206 @@
 }
 .ra-main-form {
 	margin: 50px 0 0 0;
-	background-color: rgba(71, 71, 71, 0.726);
-	width: 90%;
+	width: 75%;
+	backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(56, 56, 56, 0.644);
+    /* border-radius: 12px; */
+    border: 1px solid rgba(255, 255, 255, 0.125);
+	box-shadow: var(--shadow);
 }
-.ra-main-title, .ra-dropdown {
+.ra-main-title {
+	font-size: var(--h2);
 	text-align: center;
 	margin: 10px 0;
 }
+.ra-dropdown {
+	text-align: center;
+	margin: 10px 0;
+	padding: 10px 0;
+}
 .ra-referral-dropdown {
 	padding: 5px;
-	font-size: 14px;
+	font-size: var(--p);
 	border-radius: 5px;
-	border: 1px solid gray;
+	border: var(--border2);
+}
+.ra-applicant-info {
+	margin: 20px 0;
 }
 .ra-applicant-title {
+	font-size: var(--h3);
 	text-align: center;
+	/* border-top: 3px dashed rgb(255, 255, 255); */
+	padding: 20px 0;
 }
-.ra-applicant-name-container {
+.ra-applicant-identity-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .ra-applicant-name {
-	font-size: 14px;
+	font-size: var(--h5);
 	margin: 10px 10px;
 }
-.ra-applicant-first-name, .ra-applicant-middle-name, .ra-applicant-last-name {
+.ra-applicant-first-name,
+.ra-applicant-middle-name,
+.ra-applicant-last-name {
 	width: 200px;
 	padding: 5px;
-	font-size: 14px;
+	font-size: var(--p);
 	border-radius: 5px;
-	border: 1px solid gray;
+	border: var(--border2);
 	margin: 10px 10px;
 	text-align: center;
 }
+.ra-applicant-id-number {
+	width: auto;
+	padding: 5px;
+	font-size: var(--p);
+	border-radius: 5px;
+	border: var(--border2);
+	margin: 10px 10px;
+	text-align: center;
+}
+.ra-applicant-id-state-dropdown {
+	width: auto;
+	padding: 5px;
+	font-size: var(--p);
+	border-radius: 5px;
+	border: var(--border2);
+}
+.ra-applicant-id-option-default {
+	font-size: var(--p);
+	width: 50%;
+}
+.ra-applicant-id-options {
+	font-size: var(--p);
+	width: 50%;
+}
 
+.ra-applicant-birthday-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.ra-applicant-birth-month-dropdown,
+.ra-applicant-birth-day-dropdown,
+.ra-applicant-birth-year-dropdown,
+.ra-applicant-ssn,
+.ra-applicant-phone,
+.ra-applicant-email {
+	width: auto;
+	padding: 5px;
+	font-size: var(--p);
+	border-radius: 5px;
+	border: var(--border2);
+	margin: 10px 10px;
+	text-align: center;
+}
+.ra-applicant-email-container {
+	position: relative;
+}
+.ra-applicant-invalid-email {
+	position: absolute;
+	top: -5px;
+	left: 30px;
+	font-size: 12px;
+	color: red;
+}
+.ra-co-applicant-info {
+	margin: 20px 0;
+	padding: 20px 0;
+	/* border-top: 3px dashed rgb(255, 255, 255); */
+}
+.ra-co-applicant-title {
+	font-size: var(--h3);
+	text-align: center;
+	/* margin: 20px 0; */
+}
+.ra-co-applicant-identity-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.ra-co-applicant-name {
+	font-size: var(--h5);
+	margin: 10px 10px;
+}
+.ra-co-applicant-first-name,
+.ra-co-applicant-middle-name,
+.ra-co-applicant-last-name {
+	width: 200px;
+	padding: 5px;
+	font-size: var(--p);
+	border-radius: 5px;
+	border: var(--border2);
+	margin: 10px 10px;
+	text-align: center;
+}
+.ra-co-applicant-id-number {
+	width: auto;
+	padding: 5px;
+	font-size: var(--p);
+	border-radius: 5px;
+	border: var(--border2);
+	margin: 10px 10px;
+	text-align: center;
+}
+.ra-co-applicant-id-state-dropdown {
+	width: auto;
+	padding: 5px;
+	font-size: var(--p);
+	border-radius: 5px;
+	border: var(--border2);
+}
+.ra-co-applicant-id-option-default {
+	font-size: var(--p);
+	width: 50%;
+}
+.ra-co-applicant-id-options {
+	font-size: var(--p);
+	width: 50%;
+}
 
-
-
+.ra-co-applicant-birthday-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.ra-co-applicant-birth-month-dropdown,
+.ra-co-applicant-birth-day-dropdown,
+.ra-co-applicant-birth-year-dropdown,
+.ra-co-applicant-ssn,
+.ra-co-applicant-phone,
+.ra-co-applicant-email {
+	width: auto;
+	padding: 5px;
+	font-size: var(--p);
+	border-radius: 5px;
+	border: var(--border2);
+	margin: 10px 10px;
+	text-align: center;
+}
+.ra-co-applicant-email-container {
+	position: relative;
+}
+.ra-co-applicant-invalid-email {
+	position: absolute;
+	top: -5px;
+	left: 30px;
+	font-size: 12px;
+	color: red;
+}
+@media screen and (max-width: 1440px) {
+	.ra-applicant-id-options,
+	.ra-applicant-id-option-default {
+		font-size: 12px;
+	}
+}
 
 /* ------------- */
