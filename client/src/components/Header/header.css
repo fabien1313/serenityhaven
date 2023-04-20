@@ -2,27 +2,37 @@
 
 
 :root {
-    --main: black;
+    --main: white;
     --secondary: beige;
     --testcolor: rgb(43, 169, 211);
-    --logofontsize: 35px;
+    --logofontsize: 34px;
     --font: 'Aboreto', cursive;
     --glowaffect: #2e45f7;
 }
 
-
-#header-main-container {
+#header-container-all-elems-div {
     display: flex;
-    background-color: var(--testcolor);
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#header-container-logo-img {
+    margin-top: 10px;
+    display: flex;
+    /* background-color: rgb(50, 50, 50); */
+    width: 20%;
+    border-radius: 50%;
+    border-radius: 12px;
+   
+
 }
 
 #header-logo-title {
     color: var(--secondary);
     font-size: var(--logofontsize);
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 18px;
+    margin-left: 22px;
     font-family: var(--font);
-    /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #F7D12E, 0 0 70px #F7D12E, 0 0 80px #F7D12E, 0 0 100px #F7D12E, 0 0 150px #F7D12E; */
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--glowaffect), 0 0 70px var(--glowaffect), 0 0 60px var(--glowaffect), 0 0 90px var(--glowaffect), 0 0 120px var(--glowaffect);
     animation: pulsate 4.5s ease-out infinite;
 
@@ -32,12 +42,47 @@
     width:60px;
     height: 60px;
     margin-left: 5px;
-    margin-top: 10px;
+    margin-top: 9px;
 }
+
+
+.header-nav-item1, .header-nav-item2, .header-nav-item3, .header-nav-item4 {
+    display: inline-block;
+    margin-right: 20px;
+    font-family: var(--font);
+    color: var(--main);
+
+
+}
+
+#header-burger-menu {
+    height: 100%;
+    width: 4em;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.burger-bar {
+    width: 4em;
+    height: 0.5em;
+    background-color: blue;
+    border-radius: 0.5em;
+}
+
+.menu {
+    
+}
+
+
+
 
 @keyframes pulsate {
     0% {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 30px var(--glowaffect), 0 0 60px var(--glowaffect), 0 0 70px var(--glowaffect), 0 0 900px var(--glowaffect), 0 0 120px var(--glowaffect);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 30px var(--glowaffect), 0 0 60px var(--glowaffect), 0 0 70px var(--glowaffect), 0 0 90px var(--glowaffect), 0 0 120px var(--glowaffect);
     }
     50% {
         text-shadow: none;
