@@ -8,6 +8,7 @@ const Hero = styled.div`
   .hero {
     width: 100%;
     height: 100vh;
+    opacity: 0.9;
   }
 
 `
