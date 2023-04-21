@@ -9,6 +9,11 @@ const Ul = styled.ul`
 
   li {
     margin: 0 10px;
+  }
+  li a {
+    color: white;
+    text-decoration: none;
+  }
 `
 
 const Nav = () => {

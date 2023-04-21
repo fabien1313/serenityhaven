@@ -45,7 +45,12 @@ const RentalApp = () => {
 	const [coOccupant5Name, setCoOccupant5] = useState("");
 	const [coOccupant5age, setCoOccupant5age] = useState("");
 	const [coOccupant5Relationship, setCoOccupant5Relationship] = useState("");
-
+	const [isPet1, setIsPet1] = useState('');
+	const [typeOfPet1, setTypeOfPet1] = useState('');
+	const [pet1LicenseNumber, setPet1LicenseNumber] = useState('');
+	const [isPet2, setIsPet2] = useState('');
+	const [typeOfPet2, setTypeOfPet2] = useState('');
+	const [pet2LicenseNumber, setPet2LicenseNumber] = useState('');
 
 	const handleReferralChange = (event) => {
 		setReferredOption(event.target.value);
@@ -176,6 +181,24 @@ const RentalApp = () => {
 	};
 	const handleCoOccupant5Relationship = (event) => {
 		setCoOccupant5Relationship(event.target.value);
+	};
+	const handleSetIsPet1 = (event) => {
+		setIsPet1(event.target.value);
+	};
+	const handleSetIsPet2 = (event) => {
+		setIsPet2(event.target.value);
+	};
+	const handleTypeOfPet1Change = (event) => {
+		setTypeOfPet1(event.target.value);
+	};
+	const handleTypeOfPet2Change = (event) => {
+		setTypeOfPet2(event.target.value);
+	};
+	const handlePet1LicenseNumberChange = (event) => {
+		setPet1LicenseNumber(event.target.value);
+	};
+	const handlePet2LicenseNumberChange = (event) => {
+		setPet2LicenseNumber(event.target.value);
 	};
 
 	return (
@@ -319,6 +342,48 @@ const RentalApp = () => {
 						<input className='ra-other-occupants-name5 textInputField' value={coOccupant5Name} onChange={handleCoOccupant5Name} placeholder='Additional Occupant Name'/>
 						<input className='ra-other-occupants-age5 textInputField' value={coOccupant5age} onChange={handleCoOccupant5Age} placeholder='Age'/>
 						<input className='ra-other-occupants-relationship5 textInputField' value={coOccupant5Relationship} onChange={handleCoOccupant5Relationship} placeholder='Relationship'/>
+					</div>
+				</div>
+				<div className="ra-pets-container ra-column-container">
+					<h3 className="ra-pets-title ra-section-title">Pets</h3>
+					<h5 className="ra-other-occupants-subtitle subtitle">(All pets must be approved. $500 security deposit for each.)</h5>
+					<div className="ra-row-container-wrap">
+						<label htmlFor="isPet1" className="ra-pet1-label">Do you have a pet?</label>
+						<select id="isPet1" value={isPet1} onChange={handleSetIsPet1} className="ra-pet1-dropdown dropdownInputField">
+							<option value="">N/A</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+						</select>
+						<label htmlFor="typeOfPet1" className="ra-pet1-type-label">Type of Pet</label>
+						<select id="typeOfPet1" value={typeOfPet1} onChange={handleTypeOfPet1Change} className="ra-pet1-type-dropdown dropdownInputField">
+							<option value="">N/A</option>
+							<option value="dog">Dog</option>
+							<option value="cat">Cat</option>
+							<option value="bird">Bird</option>
+							<option value="fish">Fish</option>
+							<option value="reptile">Reptile</option>
+							<option value="other">Other</option>
+						</select>
+						<input type='text' value={pet1LicenseNumber} onChange={handlePet1LicenseNumberChange} className='ra-pet1-license-number dropdownInputField' placeholder='License Number'/>
+					</div>
+					<div className="ra-row-container-wrap">
+						<label htmlFor="isPet2" className="ra-pet2-label">Do you have another pet?</label>
+						<select id="isPet2" value={isPet2} onChange={handleSetIsPet2} className="ra-pet2-dropdown dropdownInputField">
+							<option value="">N/A</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+						</select>
+						<label htmlFor="typeOfPet2" className="ra-pet2-type-label">Type of Pet</label>
+						<select id="typeOfPet2" value={typeOfPet2} onChange={handleTypeOfPet2Change} className="ra-pet2-type-dropdown dropdownInputField">
+							<option value="">N/A</option>
+							<option value="dog">Dog</option>
+							<option value="cat">Cat</option>
+							<option value="bird">Bird</option>
+							<option value="fish">Fish</option>
+							<option value="reptile">Reptile</option>
+							<option value="other">Other</option>
+						</select>
+						<input type='text' value={pet2LicenseNumber} onChange={handlePet2LicenseNumberChange} className='ra-pet2-license-number dropdownInputField' placeholder='License Number'/>
 					</div>
 				</div>
 			</form>
