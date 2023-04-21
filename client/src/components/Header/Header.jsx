@@ -8,11 +8,13 @@ const Logo = styled.div`
   font-size: 2rem;
   justify-content: space-between;
   height: 110px;
+  margin-bottom: 10px;
   }
   .logoTitle {
     display: flex;
     align-items: flex-end;
     padding-left: 20px;
+    gap: 10px;
   }
   .logoTitle img {
     border-radius: 50%;
@@ -28,8 +30,8 @@ const Logo = styled.div`
   }
   img {
     position:relative;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
   .title {
   color: white;
