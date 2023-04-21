@@ -5,7 +5,6 @@ import Nav from './Nav'
 
 const Logo = styled.div`
   display: flex;
-  font-size: 34px;
   justify-content: space-between;
   height: 110px;
   }
@@ -33,7 +32,6 @@ const Logo = styled.div`
   }
   .title {
   color: white;
-  margin-left: 10px;
   font-family: 'Aboreto', cursive;
   text-shadow: 
     0 0 10px #fff, 
