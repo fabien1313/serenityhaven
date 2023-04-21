@@ -5,6 +5,7 @@ import Nav from './Nav'
 
 const Logo = styled.div`
   display: flex;
+  font-size: 2rem;
   justify-content: space-between;
   height: 110px;
   }
