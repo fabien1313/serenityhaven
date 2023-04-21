@@ -23,11 +23,10 @@
     --border1: 3px solid black;
     --border2: 1px solid black;
     --shadow: 5px 5px 10px #000000d3;
+	--main: rgba(0, 0, 0, 0.952);
 }
+
 body {
-    /* background-image: url(./images/background.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center; */
-	/* background-attachment: fixed; */
+	background-color: var(--main);
+	
 }
