@@ -9,7 +9,7 @@
 	margin: 50px 0 0 0;
 }
 .ra-main-form {
-	margin: 50px 0 0 0;
+	margin: 50px 0 200px 0;
 	width: 60%;
 	background-color: var(--window);
     border-radius: 12px;
@@ -41,6 +41,9 @@
 	font-size: var(--p);
 	text-align: center;
 	color: yellow;
+}
+.dropdownInputField {
+	width: fit-content;
 }
 .textInputField, .dropdownInputField {
 	padding: 5px;
