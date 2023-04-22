@@ -2,6 +2,7 @@ import React from 'react'
 import apartment from '../../images/pic1.webp'
 import styled from 'styled-components'
 import Nav from './Nav'
+import Hamburger from './Hamburger'
 
 const Logo = styled.div`
   display: flex;
@@ -32,6 +33,7 @@ const Logo = styled.div`
     position:relative;
     width: 60px;
     height: 60px;
+    margin-left:12px;
   }
   .title {
   color: white;
@@ -84,6 +86,7 @@ const Header = () => {
   return (
     <Logo>
       <div className='logoTitle'>
+        <Hamburger />
         <a href='/'><img className='apartment-img' src={apartment} alt="apartment"/></a>
         <div className='title'>Serenity Haven</div>
       </div>
