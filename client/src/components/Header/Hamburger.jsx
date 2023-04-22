@@ -1,5 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import {useState} from 'react';
+import React, { useEffect} from 'react';
+import ham from './ham';
 
 const Bar = styled.div`
 .bar{
@@ -9,12 +11,14 @@ const Bar = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
+    cursor: pointer;
 }
 .line {
     width: 90%;
     height: 5px;
     background-color: white;
     border-radius: 5px;
+    transition: all 400ms ease-in-out;
 }
 .line::before, .line::after {
     content: '';
@@ -23,6 +27,7 @@ const Bar = styled.div`
     height: 5px;
     background-color: white;
     border-radius: 5px;
+    transition: transform 400ms ease-in-out;
 }
 .line::before {
     transform: translateY(13px);
@@ -30,22 +35,34 @@ const Bar = styled.div`
 .line::after {
     transform: translateY(-13px);
 }
+.bar.active .line {
+    background-color: transparent;
+}
 
-
+.bar.active .line::after {
+    transform: rotate(45deg);
+}
+.bar.active .line::before {
+    transform: rotate(-45deg);
+}
 `
 
-
-
-
 const Hamburger = () => {
-  return (
-    <Bar>
-    <div className='bar'>
-        <div className='line'></div>
-
-    </div>
-    </Bar>
-  )
-}
+    const [bar, setBar] = useState(false);
+    
+    useEffect(() => {
+      ham();
+    }, []);
+  
+    const classes = bar ? 'bar active' : 'bar';
+  
+    return (
+      <Bar>
+        <div className={classes} onClick={() => setBar(!bar)}>
+          <div className="line"></div>
+        </div>
+      </Bar>
+    );
+  };
 
 export default Hamburger
