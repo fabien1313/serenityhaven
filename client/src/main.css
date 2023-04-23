@@ -9,10 +9,12 @@
 :root {
     --color1: #9500ec;
     --color2: #7407a0;
-    --color3: #ffa600;
-    --color4: green;
+    --color3: #9500ec;
+    /* --color3: #ffa600; */
+    --color4: rgb(0, 216, 180);
+    /* --color4: #2e45f7; */
     --color5: rgb(218, 218, 218);
-    --color6: rgb(29, 29, 29);
+    --color6: rgb(53, 53, 53);
     --h1: 3rem;
     --h2: 2.25rem;
     --h3: 1.75rem;
@@ -22,14 +24,18 @@
     --window: rgba(0, 88, 189, 0.356);
     --border1: 5px solid #535353c0;
     --border2: 3px inset #53535388;
-    --shadow: 5px 5px 8px #53535388;
+    --shadow: 2px 2px 5px var(--color4);
     /* --main: rgb(0, 0, 0); */
     /* --main2: rgb(22, 22, 22); */
     /* --main3: rgb(48, 48, 48); */
     --main: rgba(0, 0, 0, 0.952);
-    --inputBG: rgba(255, 255, 255, 0.925);
+    --inputBG: rgba(78, 78, 78, 0.925);
 }
 
 body {
 	background-color: var(--main);
+}
+
+a {
+    text-decoration: none;
 }
