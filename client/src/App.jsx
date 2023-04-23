@@ -2,7 +2,8 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Admin from "./components/Admin/Admin";
-import RentalApp from "./components/RentalApp/RentalApp";
+import PersonalInfo from "./components/RentalApp/PersonalInfo";
+import AdditionalOccupants from "./components/RentalApp/AdditionalOccupants";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
@@ -14,10 +15,11 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home/>} />
 					<Route path="/dashboard" element={<Dashboard/>} />
-					<Route path="/rentalApp" element={<RentalApp/>} />
 					<Route path="/admin" element={<Admin/>} />
 					{/* <Route path='/login' element={Login} /> */}
 					{/* <Route path='/signup' element={signup} /> */}
+					<Route path="/application/personalInfo" element={<PersonalInfo/>} />
+					<Route path="/application/additionalOccupants" element={<AdditionalOccupants/>} />
 				</Routes>
 			</Router>
 		</div>
