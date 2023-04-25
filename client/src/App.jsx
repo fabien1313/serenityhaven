@@ -2,16 +2,16 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Admin from "./components/Admin/Admin";
-import PersonalInfo from "./components/RentalApp/PersonalInfo";
-import AdditionalOccupants from "./components/RentalApp/AdditionalOccupants";
-import ResidenceHistory from "./components/RentalApp/ResidenceHistory";
+import PersonalInfo from "./components/RentalApp/PersonalInfo/PersonalInfo";
+import AdditionalOccupants from "./components/RentalApp/AdditionalOccupants/AdditionalOccupants";
+import ResidenceHistory from "./components/RentalApp/ResidenceHistory/ResidenceHistory";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
 	return (
 		<div className="app-main-container">
-			<Header/>
+			{/* <Header/> */}
 			<Router>
 				<Routes>
 					<Route path="/" element={<Home/>} />

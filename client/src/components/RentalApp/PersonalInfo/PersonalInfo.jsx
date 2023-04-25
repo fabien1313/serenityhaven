@@ -1,10 +1,10 @@
 import React from "react";
 import { Formik, Form, ErrorMessage, Field } from "formik";
 import "./personalInfo.css";
-import piInitialValues from "./schemas/piInitialValues";
-import piValidationSchema from "./schemas/piValidationSchema";
-import stateOptions from "./schemas/stateOptions.js";
-import { months, days, years } from "./schemas/date.js";
+import piInitialValues from "../schemas/personalInfo/piInitialValues";
+import piValidationSchema from "../schemas/personalInfo/piValidationSchema";
+import stateOptions from "../schemas/global/stateOptions.js";
+import { months, days, years } from "../schemas/global/date.js";
 
 const PersonalInfo = () => {
 	const initialValues = piInitialValues;
@@ -115,6 +115,7 @@ const PersonalInfo = () => {
 									<ErrorMessage name="coApplicantSSN" component="span" className="raError" />
 								</div>
 								<div className="raBdayWrap">
+									<span className="ra-dob">Date of Birth</span>
 									<div>
 										<Field name="coApplicantDOBMonth" as="select" className="raInput">
 											{months.map((month) => (

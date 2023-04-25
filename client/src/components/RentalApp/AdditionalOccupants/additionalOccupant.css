@@ -1,27 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap');
 
-.raWrapper {
+.aoWrapper {
     font-family: 'Cinzel', serif;
-    margin-top: 50px;
+    margin: 50px 0;
 	display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-Form {
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0px 0 20px 0;
     width: auto;
 }
-.raContent {
+.aoContent {
     background: var(--color6);
     box-shadow: var(--shadow);
     border: var(--border2);
     border-radius: 10px;
+    max-width: 768px;
 }
-.raFormTitle {
+.aoFormTitle {
     font-size: var(--h3);
     font-weight: 600;
     margin: 30px 0;
@@ -29,41 +30,39 @@ Form {
     text-decoration: underline;
     color: var(--color3);
 }
-.raFormSubtitle {
+.aoFormSubtitle {
     font-size: var(--h5);
     font-weight: 400;
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
     color: var(--color4);
 }
-.raOuterFormWrap
+.aoFormSubSubtitle
+{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color4);
+}
+.aoFieldLabels
+{
+    font-size: var(--p);
+    font-weight: 400;
+    text-align: center;
+    color: var(--color4);
+}
+.aoOuterFormWrap
 {
     display: flex;
-	flex-direction: row;
+	flex-direction: column;
     flex-wrap: wrap;
 	margin: 20px 0;
     max-width: 768px;
     justify-content: center;
     gap: 30px;
+    padding: 0 50px;
 }
-.raBdayWrap
-{
-    display: flex;
-    flex-direction: row;
-	justify-content: center;
-	gap: 18px;
-    width: 209px;
-    position: relative;
-}
-.raBdayWrap span
-{
-    position: absolute;
-    top: -20px;
-    left: 23%;
-    font-size: 14px;
-    color: var(--color4);
-}
-.raInput {
+.aoInput {
     padding: 5px;
 	font-size: var(--p);
 	border-radius: 5px;
@@ -72,17 +71,13 @@ Form {
     color: var(--color4);
     max-width: none;
     box-sizing: border-box;
+    margin: 10px 0;
 }
-.raInput::placeholder
+.aoInput::placeholder
 {
     color: rgb(158, 158, 158);
 }
-#applicantIDState,
-#coApplicantIDState 
-{
-    width: 209px;
-}
-.raSubmitBtn {
+.aoSubmitBtn {
     margin: 20px 0;
     padding: 10px;
     font-size: var(--p);
@@ -95,20 +90,53 @@ Form {
     border: 1px solid var(--color4);
     text-decoration: none;
 }
-.raSubmitBtn:hover {
+.aoSubmitBtn:hover {
     background-color: var(--color3);
     border: 1px solid var(--color3);
     color: white;
 }
-.raDataFields {
+.aoDataFields {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.aoPetOuterWrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.aoPetInnerWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0;
+}
+.aoPetInnerWrap2
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+.aoAgeWrap
+{
     position: relative;
 }
-.raError {
+.aoError {
     position: absolute;
-    top: -20px;
+    top: -10px;
     left: 5px;
-    font-size: 14px;
-    color: rgb(255, 0, 0);
+    font-size: 12px;
+    color: rgb(255, 0, 0) !important;
 }
-
-/* ================================== */
+.important {
+    color: red !important;
+}
