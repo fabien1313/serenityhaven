@@ -1,8 +1,8 @@
 import React from "react";
 import { Formik, Form, ErrorMessage, Field } from "formik";
 import "./additionalOccupant.css";
-import aoInitialValues from "./schemas/aoInitialValues";
-import aoValidationSchema from "./schemas/aoValidationSchema";
+import aoInitialValues from "../schemas/additionalOccupants/aoInitialValues";
+import aoValidationSchema from "../schemas/additionalOccupants/aoValidationSchema";
 
 const AdditionalOccupants = () => {
 	const initialValues = aoInitialValues
