@@ -16,6 +16,7 @@ const Hero = styled.div`
 const Home = () => {
   return (
     <Hero>
+      <button>Check Availability & Apply </button>
     <div>
       <img className='hero' src={hero} alt="Serenity Haven Apartment Image" />
     </div>
